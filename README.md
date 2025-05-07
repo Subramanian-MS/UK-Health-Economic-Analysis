@@ -16,38 +16,6 @@ This project investigates the relationship between economic growth (measured by 
 *   **`longitudinal_data.csv`**: The data for GDP per capita (Indicator: `NY.GDP.PCAP.CD`) and Infant Mortality Rate (Indicator: `SP.DYN.IMRT.IN`) for the United Kingdom were originally sourced from the World Bank World Development Indicators (WDI).
 *   **`uk_health_expenditure_gdp_wbgapi.csv`**: Data for Health Expenditure, current (% of GDP) (Indicator: `SH.XPD.CHEX.GD.ZS`) for the United Kingdom is downloaded directly from the World Bank WDI via the `wbgapi` library within the Jupyter Notebook for the years 2000-2015.
 
-## Setup and Usage
 
-To run this analysis:
 
-1.  **Clone the Repository**:
-    ```bash
-    git clone <repository-url>
-    cd <repository-name>
-    ```
-2.  **Create a Virtual Environment (Recommended)**:
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
-    ```
-3.  **Install Dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
-4.  **Run the Jupyter Notebook**:
-    Open and run the `A Case Study of the United Kingdom.ipynb` notebook using Jupyter Lab or Jupyter Notebook.
-
-    The notebook will:
-    *   Download health expenditure data if not already present.
-    *   Perform all data analysis and modeling.
-    *   Display results and all generated plots inline.
-
-## Summary of Key Findings
-
-*   There is a strong inverse relationship between GDP per capita and Infant Mortality Rate (IMR) in the UK over the period 1960-2015. As GDP per capita increased, IMR generally decreased.
-*   A polynomial regression model provided a better fit for the GDP vs. IMR relationship over the entire period (1960-2015) compared to a simple linear regression, suggesting non-linear dynamics.
-*   For the more recent period (2000-2015), when considering both GDP per capita and health expenditure as a percentage of GDP:
-    *   Both factors were found to be significant in predicting IMR.
-    *   The Random Forest Regressor model indicated that health expenditure as a percentage of GDP was a more dominant factor than GDP per capita in explaining variations in IMR during this specific period.
-
-This analysis highlights the complex interplay of economic development and specific health investments in influencing public health outcomes.
+Note : Key Finding report is also attached(201898183.pdf)
